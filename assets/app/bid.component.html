@@ -1,0 +1,26 @@
+<div class="no-style" style="margin-left: 4px">
+    <h4>Hello User</h4>
+    <form *ngFor="let bid of Bids; let i = index" class="form-inline" style="padding:5px">
+        <div class="form-group row">
+            <div style="width:500px" class="col-md-12">
+                <div class="col-md-2">
+                    <label for="deal">Deal {{i+1}}:</label>
+                </div>
+                <div class="col-md-6">
+                    <input name="bidId" type="hidden" value="{{bid.Id}}">
+                    <input name="deal" type="text" [(ngModel)]="bid.Amount" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                    <button [style.display]="!bid.IsAdded ? 'block' : 'none'" type="submit" (click)="addBid(bid)" class="btn btn-primary">Submit Bid</button>
+                    <span [style.display]="!bid.IsAdded ? 'none'  : 'block'">
+                Bid submitted successfully
+                </span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </form>
+</div>

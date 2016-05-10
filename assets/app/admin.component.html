@@ -1,0 +1,21 @@
+<h4>Hello admin</h4>
+<div>
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>Deal</th>
+            <th>Company Name</th>
+            <th>Bid $</th>
+            <th>Country</th>
+            <th>Timestamp</th>
+
+        </tr>
+        <tr *ngFor="let bid of dataModel; let i = index">
+            <td>{{bid.DealId}}</td>
+            <td>{{bid.CompanyName}}</td>
+            <td>{{bid.Amount}}</td>
+            <td>{{bid.Country}}</td>
+            <td></td>
+
+        </tr>
+    </table>
+</div>

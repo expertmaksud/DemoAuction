@@ -1,0 +1,28 @@
+<div class="no-style" style="margin-left: 4px">
+    <h1>User Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="userName">Name</label>
+            <input name="userName" type="text" [(ngModel)]="model.UserName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="companyName" [(ngModel)]="model.CompanyName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNo">Phone Number</label>
+            <input name="phoneNo" type="tel" [(ngModel)]="model.PhoneNo" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input name="email" type="email" [(ngModel)]="model.Email" class="form-control" required>
+        </div>
+
+        <button type="submit" (click)="addUser()" class="btn btn-primary">Start</button>
+
+    </form>
+
+</div>
