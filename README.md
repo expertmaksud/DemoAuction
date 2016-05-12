@@ -5,7 +5,7 @@ It is a real time demo auction application develop using  [Sails](http://sailsjs
 ## Getting Started
 
 * Clone this repository.
-* Instal node js and npm if you don't have.
+* Install node js and npm if you don't have.
 * Install sails js `npm -g install sails`.
 * If you don't have TypeScritp installed, install it using `npm install -g typescript`.
 * Install DynamoDb locally [Running DynamoDB on Your Computer](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
