@@ -24,11 +24,12 @@ module.exports = {
         Bid.watch(req);
     },
     getByAuction: function (req, res) {
-        var data = (req.body) ? req.body : undefined;
-        AuctionService.getAuction(function (success) {
-            BidService.getDataByAuction(success.Id, function (bid) {
-                res.json(bid);
-            });
+          AuctionService.getAuction(function (success) {
+            if (success != undefined) {
+                BidService.getDataByAuction(success.Id, function (bid) {
+                    res.json(bid);
+                });
+            }
         });
 
     }
